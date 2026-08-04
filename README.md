@@ -1,11 +1,11 @@
 # Estudo de Caso: Supermercado Online
 ## Análise de Infraestrutura focada nos pilares de Custo e Confiabilidade
 
-O presente estudo analisa um e-commerce supermercadista que enfrenta altos picos de acesso durante as semanas de pagamento de salários e pensões. O workload crítico precisa garantir alta disponibilidade do carrinho de compras e sincronia de estoque em tempo real para evitar vendas sem saldo. Simultaneamente, busca-se eficiência financeira através do manejo inteligente dos recursos computacionais durante janelas de baixo tráfego (como a madrugada).
+O presente estudo analisa um e-commerce supermercadista (inspirado na escala de operações de grandes redes do interior paulista, como o Savegnago) que enfrenta altos picos de acesso durante as semanas de pagamento de salários, pensões e lançamento de campanhas de cupons de desconto. O workload crítico precisa garantir alta disponibilidade do carrinho de compras e sincronia de estoque em tempo real para evitar vendas sem saldo. Simultaneamente, busca-se eficiência financeira através do manejo inteligente dos recursos computacionais durante janelas de baixo tráfego (como a madrugada).
 
 ### 1. Pilar de Confiabilidade
 
-*   **O Cenário:** Como garantir que o banco de dados atualize o estoque em tempo real, sem falhar, durante os picos de acesso repentinos?
+*   **O Cenário:** Como garantir que o sistema não caia e que o banco de dados atualize o estoque em tempo real quando há um pico repentino de acessos gerado pelo disparo de uma página de cupons promocionais?
 *   **Aplicação Prática:** Em vez de depender de um único servidor central e vulnerável, a arquitetura utiliza múltiplos **servidores em nuvem** (máquinas virtuais) menores trabalhando em conjunto. Para lidar com a avalanche de acessos, utiliza-se um **Balanceador de Carga** na entrada da aplicação. Ele atua como um "guarda de trânsito", recebendo todo o tráfego de clientes e distribuindo o peso igualmente entre os servidores disponíveis. Caso uma máquina apresente falha, o balanceador redireciona os usuários instantaneamente para as máquinas saudáveis, garantindo que o carrinho de compras e o estoque continuem operando sem interrupções.
 
 ```mermaid
@@ -48,3 +48,12 @@ flowchart LR
         style S3_Noite fill:#616161,color:white,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
     end
 ```
+
+---
+
+## Referências e Inspirações
+
+Este estudo de caso e a arquitetura proposta foram baseados em cenários e documentações reais:
+
+* **Cenário de Negócio:** Dinâmica de picos de tráfego inspirada nas campanhas de descontos de grandes redes varejistas, como a [Página de Cupons do Savegnago]([https://www.savegnago.com.br/cupons](https://www.savegnago.com.br/cupons?msclkid=21a3cce79cd8153b8856a696669b87b8&utm_source=bing&utm_medium=cpc&utm_campaign=ECOMM_PMAX_INSTITUCIONAL&utm_term=www.savegnago.com.br&utm_content=Cupom)).
+* **Boas Práticas de Nuvem:** [AWS Well-Architected Framework](https://aws.amazon.com/pt/architecture/well-architected/).
