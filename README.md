@@ -55,5 +55,5 @@ flowchart LR
 
 Este estudo de caso e a arquitetura proposta foram baseados em cenários e documentações reais:
 
-* **Cenário de Negócio:** Dinâmica de picos de tráfego inspirada nas campanhas de descontos de grandes redes varejistas, como a [Página de Cupons do Savegnago]([https://www.savegnago.com.br/cupons](https://www.savegnago.com.br/cupons?msclkid=21a3cce79cd8153b8856a696669b87b8&utm_source=bing&utm_medium=cpc&utm_campaign=ECOMM_PMAX_INSTITUCIONAL&utm_term=www.savegnago.com.br&utm_content=Cupom)).
+* **Cenário de Negócio:** Dinâmica de picos de tráfego inspirada nas campanhas de descontos de grandes redes varejistas, como a [Página de Cupons do Savegnago](https://www.savegnago.com.br/cupons?msclkid=21a3cce79cd8153b8856a696669b87b8&utm_source=bing&utm_medium=cpc&utm_campaign=ECOMM_PMAX_INSTITUCIONAL&utm_term=www.savegnago.com.br&utm_content=Cupom).
 * **Boas Práticas de Nuvem:** [AWS Well-Architected Framework](https://aws.amazon.com/pt/architecture/well-architected/).
