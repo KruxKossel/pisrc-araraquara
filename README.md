@@ -20,8 +20,8 @@ graph TD
     D --> F
     E --> F
     
-    style B fill:black,color:white,stroke:#333,stroke-width:2px
-    style F fill:black,color:white,stroke:#333,stroke-width:2px
+    style B fill:#0D47A1,color:white,stroke:#333,stroke-width:2px
+    style F fill:#1B5E20,color:white,stroke:#333,stroke-width:2px
 ```
 
 ### 2. Pilar de Custo
