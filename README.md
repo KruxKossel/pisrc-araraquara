@@ -44,7 +44,7 @@ flowchart LR
         IaC_Noite -.->|Desliga p/ poupar| S2_Noite[Servidor 2 - Off]
         IaC_Noite -.->|Desliga p/ poupar| S3_Noite[Servidor 3 - Off]
         
-        style S2_Noite fill:#8B0000,color:white,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
-        style S3_Noite fill:#8B0000,color:white,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+        style S2_Noite fill:#616161,color:white,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
+        style S3_Noite fill:#616161,color:white,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5
     end
 ```
