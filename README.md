@@ -1,7 +1,7 @@
 # Estudo de Caso: Supermercado Online
 ## Análise de Infraestrutura focada nos pilares de Custo e Confiabilidade
 
-O presente estudo analisa um e-commerce supermercadista (inspirado na escala de operações de grandes redes do interior paulista, como o Savegnago) que enfrenta altos picos de acesso durante as semanas de pagamento de salários, pensões, promoções e lançamento de campanhas de cupons de desconto. O workload crítico precisa garantir alta disponibilidade do carrinho de compras e sincronia de estoque em tempo real para evitar vendas sem saldo. Simultaneamente, busca-se eficiência financeira através do manejo inteligente dos recursos computacionais durante janelas de baixo tráfego (como a madrugada).
+O presente estudo analisa um e-commerce supermercadista (inspirado na escala de operações de grandes redes do interior paulista, como o Savegnago) que enfrenta altos picos de acesso durante as semanas de pagamento (salários e pensões), grandes promoções e lançamento de campanhas de cupons de desconto. O workload crítico precisa garantir alta disponibilidade do carrinho de compras e sincronia de estoque em tempo real para evitar vendas sem saldo. Simultaneamente, busca-se eficiência financeira através do manejo inteligente dos recursos computacionais durante janelas de baixo tráfego (como a madrugada).
 
 ### 1. Pilar de Confiabilidade
 
